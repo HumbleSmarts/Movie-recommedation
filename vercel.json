@@ -1,0 +1,14 @@
+{
+    "builds": [
+        {
+            "src": "movie-recommendation/app.py",
+            "use": "@vercel/python"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "movie-recommendation/app.py"
+        }
+    ]
+}
