@@ -1,14 +1,14 @@
 {
     "builds": [
         {
-            "src": "movie-recommendation/app.py",
-            "use": "@vercel/python"
+            "src": "app.py",
+            "use": "@liudonghua123/now-flask"
         }
     ],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "movie-recommendation/app.py"
+            "dest": "app.py"
         }
     ]
 }
